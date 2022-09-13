@@ -15,25 +15,29 @@
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_2_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="C3E-UA-jcT">
-                                <rect key="frame" x="34" y="485" width="363" height="363"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="safeArea" id="aWF-LT-OzF"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lhg-YE-ard">
-                                <rect key="frame" x="34" y="66" width="363" height="363"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhg-YE-ard">
+                                <rect key="frame" x="20" y="76" width="390" height="363"/>
                                 <viewLayoutGuide key="safeArea" id="nmZ-dW-Ueb"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-UA-jcT">
+                                <rect key="frame" x="20" y="496" width="390" height="386"/>
+                                <viewLayoutGuide key="safeArea" id="aWF-LT-OzF"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LpU-nW-fL1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="C3E-UA-jcT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="16" id="2di-PN-3u7"/>
-                            <constraint firstItem="lhg-YE-ard" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="16" id="i3r-o5-DNE"/>
+                            <constraint firstItem="C3E-UA-jcT" firstAttribute="leading" secondItem="LpU-nW-fL1" secondAttribute="leading" constant="20" id="1cG-aA-yNL"/>
+                            <constraint firstItem="LpU-nW-fL1" firstAttribute="trailing" secondItem="C3E-UA-jcT" secondAttribute="trailing" constant="20" id="A89-yE-3kQ"/>
+                            <constraint firstItem="LpU-nW-fL1" firstAttribute="trailing" secondItem="lhg-YE-ard" secondAttribute="trailing" constant="20" id="JMQ-if-jbd"/>
+                            <constraint firstItem="lhg-YE-ard" firstAttribute="top" secondItem="LpU-nW-fL1" secondAttribute="top" constant="20" id="c9t-7J-d1q"/>
+                            <constraint firstItem="lhg-YE-ard" firstAttribute="leading" secondItem="LpU-nW-fL1" secondAttribute="leading" constant="20" id="gnY-rc-dEO"/>
+                            <constraint firstItem="LpU-nW-fL1" firstAttribute="bottom" secondItem="C3E-UA-jcT" secondAttribute="bottom" constant="20" id="qqg-5e-DfC"/>
+                            <constraint firstItem="C3E-UA-jcT" firstAttribute="top" secondItem="lhg-YE-ard" secondAttribute="bottom" constant="20" id="tU6-4A-epu"/>
                         </constraints>
                     </view>
                 </viewController>
